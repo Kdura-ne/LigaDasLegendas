@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "LoL";
+  src: url(../fonts/friz-quadrata-regular-os-5870333951e7c.ttf);
+}
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "LoL";
+  color: aliceblue;
+}
+
+body {
+  background-color: rgba(45, 43, 37, 0.7254901961);
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.index-head{
+  background: transparent;
+  height: 30vh;
+  width: 100vw;
+  margin-top: -2vh;
+  margin-bottom: 2vh;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header img {
+  height: 100%;
+  width: auto;
+}
+
+img{
+    width: 70px;
+}
+
+.icone-item{
+  width: 35px;
+}
+
+.sidebar{
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  width: 15vw;
+  height: 100vh;
+  padding: 40px 10px 30px 10px;
+  border-right: 2px solid #ae985c;
+  background-color: rgba(45, 43, 37, 0.9);
+  transition: transform 0.3s ease;
+  transform: translateX(-100vw);
+  z-index: 1000;
+}
+
+.sidebar-header{
+  width: 100%;
+  margin-bottom: 16px;
+  top: 5vh;
+  position: fixed;
+  z-index: 1001;
+}
+
+#check{
+  display: none;
+}
+
+.logo{
+  cursor: pointer;
+  background-color: transparent;
+  position: fixed;
+  margin-left: 16px;
+  z-index: 1002;
+}
+
+.sidebar button{
+  height: 10vh;
+  width: 40vw;
+  background: transparent;
+  border: 0;
+  color: aliceblue;
+  cursor: pointer;
+  text-align: left;
+  padding: 0;
+}
+
+.sidebar button:hover{
+  transform: scale(1.2);
+  transform-origin: left;
+  transition: all 0.5s;
+}
+
+.sidebar button > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  height: 48px;
+  padding: 0 16px 0 12px;
+  border-radius: 24px;
+  line-height: 1;
+  font-size: 20pt;
+}
+
+.sidebar > nav{
+  margin-top: 150px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  flex-direction: column;
+  width: 100%;
+}
+
+#check:checked ~ .sidebar{
+  transform: translateX(0);
+}
+
+.main{
+  margin-left: 16vw;
+  margin-right: 6px;
+  overflow: hidden;
+}
+
+footer {
+  background-color: #ae985c;
+  color: #0d0d1f;
+  width: 100%;
+  height: 3vh;
+  text-align: center;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  position: fixed;
+}/*# sourceMappingURL=lore.css.map */
